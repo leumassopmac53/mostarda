@@ -1,0 +1,22 @@
+{
+  "name":"talking Mostarda",
+  "short_name":"Mostarda",
+  "start_url":"./",
+  "description":"É um jogo tipo Talking Tom, com um mascote chamado Mostarda.",
+  "display":"fullscreen",
+  "orientation":"portrait",
+  "theme_color":"hsl(240,70%,20%)",
+  "background_color":"hsl(240,70%,20%)",
+  "icons":[
+    {
+      "src":"./icon-512.png",
+      "sizes":"512x512",
+      "type":"image/png"
+    },
+    {
+      "src":"./icon-192.png",
+      "sizes":"192x192",
+      "type":"image/png"
+    }
+    ]
+}
