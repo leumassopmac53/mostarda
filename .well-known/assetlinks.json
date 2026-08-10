@@ -3,6 +3,6 @@
       "target": {
         "namespace": "android_app",
         "package_name": "io.github.leumassopmac53.twa",
-        "sha256_cert_fingerprints": ["4E:23:BD:39:79:CC:18:2A:F9:3C:AC:35:AA:EC:F0:2C:82:1C:FD:58:D1:3C:0B:6A:A7:E3:3B:CB:9B:95:90:77"]
+        "sha256_cert_fingerprints": ["D6:0A:FB:A5:50:E3:8D:03:3E:EC:23:99:D5:AE:57:DA:AD:1B:6E:5E:A2:D6:33:8F:CB:AA:77:E9:9C:00:03:FE"]
       }
     }]
