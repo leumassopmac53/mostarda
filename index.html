@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostarda</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json">
+  </head>
+  <body>
+    <article>
+      
+      <svg width="100" height="50" viewBox="0 0 100 50">
+        <text
+        fill="black"
+        font-size="18"
+        x="50"
+        y="10"
+        text-anchor="middle"
+        dominant-baseline="middle">fome</text>
+        
+        <rect
+        id="fome"
+        x="0"
+        y="25"
+        width="0"
+        height="10"
+        fill="red"
+        stroke="none"/>
+        
+        <rect
+        x="0"
+        y="25"
+        width="100"
+        height="10"
+        fill="none"
+        stroke-width="2"
+        stroke="black"/>
+      </svg>
+      
+      <svg width="100" height="50" viewBox="0 0 100 50">
+        <text
+        fill="black"
+        font-size="18"
+        x="50"
+        y="10"
+        text-anchor="middle"
+        dominant-baseline="middle">humor</text>
+        
+        <rect
+        id="humor"
+        x="0"
+        y="25"
+        width="0"
+        height="10"
+        fill="yellow"
+        stroke="none"/>
+        
+        <rect
+        x="0"
+        y="25"
+        width="100"
+        height="10"
+        fill="none"
+        stroke-width="2"
+        stroke="black"/>
+      </svg>
+      
+      <svg width="100" height="50" viewBox="0 0 100 50">
+        <text
+        fill="black"
+        font-size="18"
+        x="50"
+        y="10"
+        text-anchor="middle"
+        dominant-baseline="middle">sono</text>
+        
+        <rect
+        id="sono"
+        x="0"
+        y="25"
+        width="0"
+        height="10"
+        fill="blue"
+        stroke="none"/>
+        
+        <rect
+        x="0"
+        y="25"
+        width="100"
+        height="10"
+        fill="none"
+        stroke-width="2"
+        stroke="black"/>
+      </svg>
+      
+    </article>
+    
+    <main>
+      <img id="cenario">
+    </main>
+    
+    <nav></nav>
+    
+    <script src="./logica.js"></script>
+    <script src="./game.js"></script>
+    <script>
+      function rodaServiceWorker(){
+      if("serviceWorker" in navigator){
+        navigator.serviceWorker.register("./sw.js").catch(()=>{
+          console.warn("serviceWorker não registrado")
+        })
+      }
+      }
+    </script>
+  </body>
+</html>
