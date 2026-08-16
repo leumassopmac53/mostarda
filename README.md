@@ -20,7 +20,7 @@ O Mostarda é um jogo do tipo pet virtual, feito sob medida pelo criador para us
 
 ## Componentes
 
-Atualmente, o sistema de comida foi componentizado, enquanto o **Mostarda** (pet digital) possui sua própria lógica.
+Atualmente, o sistema de comida foi componentizado, enquanto o **Mostarda** (pet virtual) possui sua própria lógica.
 
 Com esse novo passo, poderão ser adicionados mais componentes, já que existe uma grande possibilidade de crescimento do projeto.
 
