@@ -25,7 +25,7 @@ const gato = {
       document.querySelector("#sono").setAttribute("width", gato.sono);
     },
 
-    Sprite() {
+    Sprite(gato) {
       document.querySelector("#player").src = gato.sprite;
     }
   },
