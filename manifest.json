@@ -10,13 +10,13 @@
   "background_color":"hsl(240,70%,20%)",
   "icons":[
     {
-      "src":"./icon-512.png",
-      "sizes":"512x512",
+      "src":"./icon-1200.png",
+      "sizes":"1200×1200",
       "type":"image/png"
     },
     {
-      "src":"./icon-192.png",
-      "sizes":"192x192",
+      "src":"./icon-900.png",
+      "sizes":"900x900",
       "type":"image/png"
     }
     ]
