@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.leumassopmac53.twa",
-        "sha256_cert_fingerprints": ["D6:0A:FB:A5:50:E3:8D:03:3E:EC:23:99:D5:AE:57:DA:AD:1B:6E:5E:A2:D6:33:8F:CB:AA:77:E9:9C:00:03:FE"]
-      }
-    }]
