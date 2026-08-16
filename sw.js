@@ -8,8 +8,8 @@ self.addEventListener("install",(e)=>{
         "./logica.js",
         "./style.css",
         "./manifest.json",
-        "./icon-512.png",
-        "./icon-192.png",
+        "./icon-1200.png",
+        "./icon-900.png",
         "./game.js"
         ])
     })
