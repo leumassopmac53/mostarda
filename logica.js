@@ -16,7 +16,7 @@ const gato = {
   fome: 100,
   sono: 100,
   humor: 100,
-  sprite: "./icon-512.png",
+  sprite: "./icon-1200.png",
 
   render: {
     Status(gato) {
