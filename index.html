@@ -109,7 +109,7 @@
     <script>
       function rodaServiceWorker(){
       if("serviceWorker" in navigator){
-        navigator.serviceWorker.register("./js/sw.js").catch(()=>{
+        navigator.serviceWorker.register("./sw.js").catch(()=>{
           console.warn("serviceWorker não registrado")
         })
       }
