@@ -16,17 +16,59 @@ const gato = {
   fome: 100,
   sono: 100,
   humor: 100,
-  sprite: "./icon-1200.png",
+  img: document.querySelector("#player"),
+  anim: "normal",
+  animacoes: {
+    abrirBoca: {
+      ultimoTempo: 0,
+      frame: 0,
+      repeat: false,
+      intervalo: 66,
+      sprites: [
+        "./comer/sprite(1).png",
+        "./comer/sprite(2).png",
+        "./comer/sprite(3).png",
+        "./comer/sprite(4).png",
+        "./comer/sprite(5).png",
+        "./comer/sprite(6).png",
+        "./comer/sprite(7).png",
+        "./comer/sprite(8).png",
+        "./comer/sprite(9).png"
+      ]
+    },
+    normal: {
+      ultimoTempo: 0,
+      frame: 0,
+      repeat: false,
+      intervalo: 66,
+      sprites: [
+        "./comer/sprite(1).png"
+      ]
+    },
+    fecharBoca: {
+      ultimoTempo: 0,
+      frame: 0,
+      repeat: false,
+      intervalo: 66,
+      sprites: [
+        "./comer/sprite(9).png",
+        "./comer/sprite(8).png",
+        "./comer/sprite(7).png",
+        "./comer/sprite(6).png",
+        "./comer/sprite(5).png",
+        "./comer/sprite(4).png",
+        "./comer/sprite(3).png",
+        "./comer/sprite(2).png",
+        "./comer/sprite(1).png"
+      ]
+    }
+  },
 
   render: {
     Status(gato) {
       document.querySelector("#fome").setAttribute("width", gato.fome);
       document.querySelector("#humor").setAttribute("width", gato.humor);
       document.querySelector("#sono").setAttribute("width", gato.sono);
-    },
-
-    Sprite(gato) {
-      document.querySelector("#player").src = gato.sprite;
     }
   },
 
@@ -76,7 +118,7 @@ const comida = {
     let y = null;
 
     img.addEventListener("pointerdown",(e)=>{
-      img.classList.remove("frezze")
+      mudarAnim(gato,"abrirBoca")
       const rect = document.querySelector("main").getBoundingClientRect();
 
       x = (e.clientX - rect.left - img.offsetWidth / 2);
@@ -93,6 +135,7 @@ const comida = {
     })
 
     img.addEventListener("pointerup",()=>{
+      mudarAnim(gato,"fecharBoca")
       const gatoRect = document.querySelector("#player").getBoundingClientRect();
 const comidaRect = img.getBoundingClientRect();
 
@@ -111,7 +154,6 @@ if (aabb(comidaRect, gatoRect)) {
 
 /* SISTEMA DE TEMPO FORA */
 window.addEventListener("load",()=>{
-  gato.render.Sprite(gato)
     saida = Number(localStorage.getItem("saida"));
     
     entrada = Date.now();
@@ -141,3 +183,4 @@ window.addEventListener("visibilitychange",()=>{
 setInterval(()=>{
   gato.diminuir("sono",0.3)
 },5000)
+                  
