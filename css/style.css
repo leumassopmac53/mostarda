@@ -67,10 +67,11 @@ nav {
     position: absolute;
     width: 200px;
     height: auto;
-    left: 25%;
+    left: 50%;
     top: 25%;
     z-index: 1;
     touch-action: none;
+    transform: translate(-50%);
 }
 
 #comida {
