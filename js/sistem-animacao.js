@@ -19,6 +19,7 @@ function animar(e, delta, img) {
 }
 
 function mudarAnim(e,anim){
+  e.animacoes[e.anim].ultimoTempo = 0
   e.animacoes[e.anim].frame = 0
   e.anim = anim
 }
